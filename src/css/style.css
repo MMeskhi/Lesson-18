@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html body {
+body {
     background-color: #ab0252;
 }
 
@@ -16,5 +16,83 @@ html body {
     top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.slider-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.slider {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slide {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    font-size: 18px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    right: 50%;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.dot:last-child {
+    margin-right: 0;
 }
