@@ -118,7 +118,6 @@ dots.forEach((item, indexDot) => {
 
 function setInt() {
   timeId = setInterval(nextSlide, 1500);
-  console.log("autoslider interval was seted");
 }
 setInt();
 
@@ -127,7 +126,6 @@ function removeInt() {
     clearInterval(timeId);
     timeId = null;
   }
-  console.log("autoslider interval was removed");
 }
 
 const slider = document.querySelector(".slider");
